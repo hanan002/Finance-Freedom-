@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Price Prediction - Input</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #555;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bitcoin Price Prediction - Input</h1>
+    <form id="predictionForm" action="/predict" method="POST">
+        <label for="Open">Open:</label>
+        <input type="text" id="Open" name="Open" required><br><br>
+        
+        <label for="High">High:</label>
+        <input type="text" id="High" name="High" required><br><br>
+        
+        <label for="Low">Low:</label>
+        <input type="text" id="Low" name="Low" required><br><br>
+        
+        <label for="Vol">Volume:</label>
+        <input type="text" id="Vol" name="Vol" required><br><br>
+        
+        <label for="Change">Change:</label>
+        <input type="text" id="Change" name="Change" required><br><br>
+        
+        <label for="Year">Year:</label>
+        <input type="text" id="Year" name="Year" required><br><br>
+        
+        <label for="Month">Month:</label>
+        <input type="text" id="Month" name="Month" required><br><br>
+        
+        <label for="Day">Day:</label>
+        <input type="text" id="Day" name="Day" required><br><br>
+        
+        <label for="Season_Autumn">Season Autumn:</label>
+        <input type="text" id="Season_Autumn" name="Season_Autumn" required><br><br>
+        
+        <label for="Season_Spring">Season Spring:</label>
+        <input type="text" id="Season_Spring" name="Season_Spring" required><br><br>
+        
+        <label for="Season_Summer">Season Summer:</label>
+        <input type="text" id="Season_Summer" name="Season_Summer" required><br><br>
+        
+        <label for="Season_Winter">Season Winter:</label>
+        <input type="text" id="Season_Winter" name="Season_Winter" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
